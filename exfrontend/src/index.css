@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    @apply font-poppins bg-gradient-to-r from-gray-200 to-gray-200;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-weight: 600;
+}
+h2,h3{
+    font-weight: 400;
+}
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* For smoother iOS scrolling */
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for better UX */
+  }
+  .modal iframe {
+    width: 90%;
+    height: auto;
+    max-height: 80vh;
+  }
+  
